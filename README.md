@@ -2,4 +2,4 @@
 
 HTML tutorial and reference docs for absolute beginners.
 
-Made for my kids ;-)
+Made for my kids 😉
