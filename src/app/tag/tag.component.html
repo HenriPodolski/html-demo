@@ -1,0 +1,35 @@
+<div *ngIf="tagDoc$ | async as tagDoc">
+  <h1><{{tagDoc.content.headline}}></h1>
+  <p
+    *ngFor="let introParagraph of tagDoc.content.introduction"
+    [innerHTML]="introParagraph"></p>
+  <div>
+    <div *ngFor="let example of tagDoc.content.examples">
+      <pre>
+        <code>{{example}}</code>
+      </pre>
+      <div [innerHTML]="example"></div>
+    </div>
+  </div>
+  <p
+    *ngFor="let docParagraph of tagDoc.content.documentation"
+    [innerHTML]="docParagraph"></p>
+  <h2>{{'meta.attributes' | translate}}</h2>
+  <div *ngFor="let attribute of tagDoc.content.attributes">
+    <h3>{{attribute.name}}</h3>
+    <div *ngFor="let attributeExample of attribute.examples">
+      <p>{{attributeExample.description}}</p>
+      <pre>
+       <code>{{attributeExample.code}}</code>
+      </pre>
+    </div>
+  </div>
+  <h2>{{'meta.links' | translate}}</h2>
+  <div *ngIf="tagDoc.links">
+    <a [href]="tagDoc.links.devdocs.link | safe" target="_blank" rel="noopener noreferrer"><{{tagDoc.name}}> {{'meta.documentation' | translate}} {{'meta.on' | translate}} {{tagDoc.links.devdocs.title}}</a>
+  </div>
+  <h2>{{'meta.example' | translate}}</h2>
+  <div *ngIf="tagDoc.examples.mdnexample">
+    <iframe [src]="tagDoc.examples.mdnexample | safe"></iframe>
+  </div>
+</div>

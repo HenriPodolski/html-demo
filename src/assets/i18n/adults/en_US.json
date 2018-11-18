@@ -1,0 +1,16 @@
+{
+  "tags": [
+    {
+      "name": "a",
+      "content": {
+        "headline": "a",
+        "documentation": [],
+        "example": ""
+      },
+      "links": {
+        "mdnexample": "https://interactive-examples.mdn.mozilla.net/pages/tabbed/a.html",
+        "devdocs": "https://devdocs.io/html/element/a"
+      }
+    }
+  ]
+}

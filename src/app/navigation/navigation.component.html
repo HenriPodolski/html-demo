@@ -1,0 +1,6 @@
+<ul *ngIf="tagDocs$ | async as tagDocs">
+  <li *ngFor="let tagDoc of tagDocs | iterable">
+    <a *ngIf="(tagName$ | async) !== tagDoc.value.name" [routerLink]="['tag', tagDoc.value.name]"><{{tagDoc.value.name}}></a>
+    <span *ngIf="(tagName$ | async) === tagDoc.value.name"><{{tagDoc.value.name}}></span>
+  </li>
+</ul>

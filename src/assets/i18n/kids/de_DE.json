@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "links": "Links",
+    "example": "Beispiel",
+    "code": "Code",
+    "documentation": "Dokumentation",
+    "on": "auf",
+    "attributes": "Wichtigste Attribute"
+  },
+  "tags": {
+    "a": {
+      "name": "a",
+      "content": {
+        "headline": "a",
+        "introduction": [
+          "Das a-Element wird benutzt um Inhalte mit einander zu verlinken."
+        ],
+        "documentation": [
+          "Das a-Element oder Anker-Tag kann verwendet werden, um Inhalte in der aktuellen Webseite, andere Webseiten, Dateien, E-Mail Adressen, Telefonnummern und viele andere Inhalte zu verlinken."
+        ],
+        "examples": [
+          "<a href=\"https://example.com\">Website</a>"
+        ],
+        "attributes": [
+          {
+            "name": "href",
+            "examples": [
+              {
+                "description": "Link zu einer Webseite",
+                "code": "<a href=\"https://example.com\">Link zu example.com</a>"
+              },
+              {
+                "description": "Sprungmarke in einer Webseite",
+                "code": "<a href=\"#unten\">Link zum Anker mit id=\"unten\"</a>"
+              }
+            ]
+          }
+        ]
+      },
+      "links": {
+        "devdocs": {
+          "title": "Devdocs",
+          "link": "https://devdocs.io/html/element/a"
+        }
+      },
+      "examples": {
+        "mdnexample": "https://interactive-examples.mdn.mozilla.net/pages/tabbed/a.html"
+      }
+    }
+  }
+}
